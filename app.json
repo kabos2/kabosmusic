@@ -1,0 +1,80 @@
+{
+    "name": "𝐊𝐀𝐁𝐎𝐒 𝐌𝐔𝐒𝐈𝐂",
+    "description": "Music allow you to stream music trought the telegram voice chat feature.",
+    "keywords": ["music", "voice chat", "telegram"],
+    "repository": "https://github.com/adhamsamyelshora/SMSMNEWMUSIXSPEED",
+    "stack": "container",
+    "env": {
+        "SESSION_NAME": {
+            "description": "fill with the pyrogram session string from account",
+            "required": true
+        },
+        "OWNER_ID": {
+            "description": "ايدي مطور البوت",
+            "required": true,
+            "value": "5001823306"
+        },
+        "ASS_ID": {
+            "description": "ايدي الحساب المساعد",
+            "required": true,
+            "value": ""
+        },
+         "BOT_IMG": {
+            "description": "صوره استارت",
+            "required": true
+        },
+        "LOG_GROUP_ID": {
+            "description": "ايدي جروب البوت قبل وضع الايدي تأكد من كتابة -100 ثم رقم الايدي",
+            "required": true,
+            "value": "-1001655300809"
+        },
+        "API_ID": {
+            "description": "ايبي ايدي الحساب المساعد يمكنك جلبه من هنا my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "ايبي هاش الحساب المساعد يمكنك جلبه من هنا my.telegram.org/apps",
+            "required": true,
+            "value": ""
+        },
+        "GROUP": {
+            "description": "يوزر جروب البوت بدون علامة @",
+            "required": true,
+            "value": "EAAMX"
+        },
+         "CHANNEL": {
+            "description": "يوزر قناة البوت بدون علامة @",
+            "required": true,
+            "value": "QQQQSSA"
+        },
+        "SUDO_USERS": {
+            "description": "ايدي مطورين البوت الاخرين غيرك (ضع الايدي الخاص بك اذا لايوجد غيرك).",
+            "required": true,
+            "value": "5001823306"
+        },
+        "DURATION_LIMIT": {
+            "description": "اتركها كما هي !",
+            "required": true,
+            "value": "3600"
+        },
+        "BOT_TOKEN": {
+            "description": "توكن البوت يمكنك جلبه من بوت فازر علي تليجرام من هنا @BotFather on telegram",
+            "required": true,
+            "value": ""
+        },
+        "MONGO_DB_URI": {
+            "description": "كود المانجو (اتركه كما هو !)",
+            "required": true,
+            "value": "mongodb+srv://sir:sir@cluster0.o4wuggg.mongodb.net/?retryWrites=true&w=majority"
+        }
+    },
+    "buildpacks": [
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
